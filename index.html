@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Indica que el documento está escrito en HTML5 -->
+
+<html lang="es">
+<!-- Define el idioma del documento (español) -->
+
+<head>
+
+    <!-- ============================= -->
+    <!-- CONEXIÓN CON CSS -->
+    <!-- ============================= -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta este HTML con el archivo de estilos CSS -->
+
+    <!-- ============================= -->
+    <!-- CONFIGURACIÓN DEL DOCUMENTO -->
+    <!-- ============================= -->
+
+    <meta charset="UTF-8">
+    <!-- Permite usar caracteres especiales como acentos (á, é, í, ó, ú) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive (se adapte a celulares y pantallas pequeñas) -->
+
+    <!-- ============================= -->
+    <!-- TÍTULO DE LA PÁGINA -->
+    <!-- ============================= -->
+
+    <title>Clientes</title>
+    <!-- Texto que aparece en la pestaña del navegador -->
+
+</head>
+
+<body>
+
+<!-- ============================= -->
+<!-- CONTENEDOR PRINCIPAL -->
+<!-- ============================= -->
+
+<div class="container">
+
+    <!-- TÍTULO PRINCIPAL DE LA APP -->
+    <h1>Gestión de Clientes</h1>
+
+    <!-- ============================= -->
+    <!-- INPUT DE TEXTO -->
+    <!-- ============================= -->
+
+    <input 
+        type="text" 
+        id="nombre" 
+        placeholder="Nombre del cliente">
+
+    <!--
+        type="text" → campo de texto
+        id="nombre" → identificador que usa JavaScript para leer el valor
+        placeholder → texto guía dentro del input
+    -->
+
+    <!-- ============================= -->
+    <!-- BOTÓN AGREGAR -->
+    <!-- ============================= -->
+
+    <button onclick="agregarCliente()">
+        Agregar
+    </button>
+
+    <!--
+        onclick="agregarCliente()"
+        → cuando el usuario hace click,
+          se ejecuta la función agregarCliente() en JavaScript
+    -->
+
+    <!-- ============================= -->
+    <!-- LISTA DINÁMICA -->
+    <!-- ============================= -->
+
+    <ul id="lista"></ul>
+
+    <!--
+        <ul> = lista sin orden
+        id="lista" → JavaScript lo usa para insertar <li>
+        Aquí se mostrarán los clientes dinámicamente
+    -->
+
+</div>
+
+<!-- ============================= -->
+<!-- CONEXIÓN CON JAVASCRIPT -->
+<!-- ============================= -->
+
+<script src="script.js"></script>
+
+<!--
+    Conecta este HTML con el archivo JavaScript
+    Sin esto, la página no tendría funcionalidad
+-->
+
+</body>
+</html>
