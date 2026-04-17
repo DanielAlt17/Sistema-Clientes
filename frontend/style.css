@@ -1,0 +1,141 @@
+/* ============================= */
+/* RESET BÁSICO Y ESTILO GLOBAL */
+/* ============================= */
+
+body {
+    font-family: Arial, sans-serif; /* Fuente general de la página */
+    background-color: #121212; /* Color de fondo oscuro */
+    margin: 0; /* Elimina márgenes por defecto del navegador */
+    padding: 0; /* Elimina padding por defecto */
+    color: #e0e0e0; /* Color de texto general (gris claro) */
+}
+
+/* ============================= */
+/* CONTENEDOR PRINCIPAL */
+/* ============================= */
+
+.container {
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 400px; /* Pero no crece más de 400px */
+    margin: 60px auto; /* Centrado horizontal + margen superior */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background: #1e1e1e; /* Fondo ligeramente más claro que el body */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra para efecto de profundidad */
+}
+
+/* ============================= */
+/* TÍTULO */
+/* ============================= */
+
+h1 {
+    color: #ffffff; /* Texto blanco para destacar */
+}
+
+/* ============================= */
+/* INPUT (campo de texto) */
+/* ============================= */
+
+input {
+    width: 65%; /* Ocupa el 65% del contenedor */
+    padding: 10px; /* Espacio interno */
+    margin-top: 20px; /* Separación arriba */
+    border: none; /* Sin borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quita borde azul al seleccionar */
+}
+
+/* ============================= */
+/* BOTÓN PRINCIPAL */
+/* ============================= */
+
+button {
+    padding: 10px 15px; /* Tamaño interno del botón */
+    margin-left: 10px; /* Separación del input */
+    background-color: #00bcd4; /* Color azul */
+    color: #000; /* Texto negro */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia cursor a mano */
+}
+
+/* Efecto cuando pasas el mouse */
+button:hover {
+    background-color: #0097a7; /* Azul más oscuro al pasar el mouse */
+}
+
+/* ============================= */
+/* LISTA (UL) */
+/* ============================= */
+
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina espacio interno */
+    margin-top: 20px; /* Separación superior */
+}
+
+/* ============================= */
+/* ELEMENTOS DE LA LISTA (LI) */
+/* ============================= */
+
+li {
+    background: #2a2a2a; /* Fondo gris oscuro */
+    margin: 10px 0; /* Separación entre elementos */
+    padding: 12px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Segunda definición de li (mejorada) */
+/* Aquí se añade flex para organizar contenido */
+li {
+    background: #2a2a2a;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+
+    display: flex; /* Acomoda elementos en fila */
+    justify-content: space-between; /* Separa contenido a los lados */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* ============================= */
+/* BOTÓN ELIMINAR */
+/* ============================= */
+
+.btn-eliminar {
+    background-color: transparent; /* Fondo transparente */
+    color: #ff4d4d; /* Texto rojo */
+    border: 1px solid #ff4d4d; /* Borde rojo */
+    padding: 5px 10px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+}
+
+/* Efecto hover del botón eliminar */
+.btn-eliminar:hover {
+    background-color: #ff4d4d; /* Fondo rojo */
+    color: white; /* Texto blanco */
+}
+
+/* ============================= */
+/* DISEÑO RESPONSIVE (CELULAR) */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 95%; /* Más ancho en pantallas pequeñas */
+        margin: 30px auto; /* Menos margen arriba */
+    }
+
+    input {
+        width: 100%; /* Input ocupa todo el ancho */
+        margin-bottom: 10px; /* Separación abajo */
+    }
+
+    button {
+        width: 100%; /* Botón ocupa todo el ancho */
+        margin: 0; /* Sin margen lateral */
+    }
+}
